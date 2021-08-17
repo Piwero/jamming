@@ -1,8 +1,8 @@
 require('dotenv').config()
-const clientId = "b48a4c8bc9a94f9a971dfdafd820fb10"
-// process.env.SPOTIFY_CLIENT_ID;
+const clientId = process.env.REACT_APP_SPOTIFY_CLIENT_ID;
+//process.env.SPOTIFY_CLIENT_ID;
 console.log(clientId); // Insert client ID here.
-const redirectUri = 'http://localhost:3000/'; // Have to add this to your accepted Spotify redirect URIs on the Spotify API.
+const redirectUri = 'https://old-ink.surge.sh/'; // Have to add this to your accepted Spotify redirect URIs on the Spotify API.
 let accessToken;
 
 const Spotify = {
